@@ -108,22 +108,25 @@ public class Vecteur {
          * @see Vecteur#taille
          * @see Vecteur#vect
          */
-    public void triVecteur()
+  public void triVecteur()
     {
-    int i,j,x;
-    for (i=1;i<taille;i++)
-    {
-    x=vect[i];
-    j=i;
-    while (vect[j-1]> x && j>=0)
-    {
-    vect[j]=vect[j-1];
-    j--;
+    int i=1,x;
+    boolean inverser;
+    do{
+        inverser=false;
+        for (i=0;i<taille-1;i++)
+         {
+           if (vect[i]>vect[i+1])
+             {
+                x=vect[i];
+                vect[i]=vect[i+1];
+                vect[i+1]=x;
+        inverser=true;
     
-    }
-    vect[j]=x;
-    }
-    }
+              }
+         }
+      }while(inverser);
+     }
     /**
      
     * <p>Trouver le maximum et le minimum dans le tableau vect. 
@@ -137,17 +140,19 @@ public class Vecteur {
          * @see Vecteur#taille
          * @see Vecteur#vect
          */
-    public void retournerBornes(int max,int min)
+    public void retournerBornes(int v[] )
     {
         int i;
-        Integer v[]=new Integer [2];
-      
+         
+      v[0]=vect[0];
+      v[1]=vect[0];
       for(i=0;i<taille-1;i++)
        {
-          if (vect[i]>vect[i+1] ) max=vect[i+1];//max
-          if (vect[i+1]>vect[i] ) min=vect[i+1];//min
+          if (vect[i]>vect[i+1] ) v[0]=vect[i+1];//min
+          if (vect[i+1]>vect[i] ) v[1]=vect[i+1];//max
+           
        }
-      
+      System.out.println(v[0]+"  "+v[1]);
     
     }
       /**

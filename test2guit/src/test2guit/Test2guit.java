@@ -13,23 +13,11 @@ public class Test2guit {
     
     public static void main(String[] args) {
         Vecteur v1=new Vecteur(3);
-        int min = 0,max=0;
+        int v[]=new int[2];        
         v1.remplir();
-        v1.triVecteur();
-        v1.afficher();
-       // v1.retournerBornes(max, min);
-         v1.Inverser();
-        Vecteur v2=new Vecteur(4);
-        v2.remplir();
-        v2.afficher();
-        try{
-        v1.sommer(v2);
-        }
-        catch(TailleDifferentException e){
-        System.out.println(e.getMessage());
-        return;
-        }
-        v1.afficher();
+      v1.retournerBornes(v);
+      System.out.println(v[0]+"  "+v[1]);
+      
     }
     
 }

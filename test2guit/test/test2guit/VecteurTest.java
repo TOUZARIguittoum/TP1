@@ -46,7 +46,7 @@ public class VecteurTest {
     /**
      * Test of triVecteur method, of class Vecteur.
      */
-   /* @Test
+    @Test
     public void testTriVecteur() {
         System.out.println("triVecteur");
         Vecteur instance = new Vecteur(10);
@@ -54,7 +54,7 @@ public class VecteurTest {
         instance.triVecteur();
         Assert.assertArrayEquals(instance.vect,V3);
       
-    }*/
+    }
 
     /**
      * Test of retournerBornes method, of class Vecteur.
@@ -64,14 +64,13 @@ public class VecteurTest {
         System.out.println("retournerBornes");
         int maxR = 10;
         int minR = 1;
-        int max = 10;
-        int min = 1;
+      
         Vecteur instance = new Vecteur(10);
         instance.vect = new int[] {1,2,3,4,5,6,7,8,9,10};
-        
-        instance.retournerBornes(max,min);
-        assertEquals(max,maxR);
-        assertEquals(min,minR);
+        int v[]=new int[2]; 
+        instance.retournerBornes(v);
+        assertEquals(v[1],maxR);
+        assertEquals(v[0],minR);
 
     }
 
