@@ -17,7 +17,7 @@ public class Test2guit {
         v1.remplir();
         v1.triVecteur();
         v1.afficher();
-        v1.retournerBornes(max, min);
+       // v1.retournerBornes(max, min);
          v1.Inverser();
         Vecteur v2=new Vecteur(4);
         v2.remplir();

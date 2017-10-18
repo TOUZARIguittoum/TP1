@@ -37,7 +37,7 @@ public class Vecteur {
      * @see Vecteur#SUB(int) 
      * 
      */
-    private int vect[];
+     int vect[];
      /**
      * la taille du tableau vect qui réprésente la classe Vecteur  
      * @see Vecteur#Vecteur(int) 
@@ -52,7 +52,7 @@ public class Vecteur {
      * @see Vecteur#SUB(int) 
      * 
      */
-    private int taille;
+    int taille;
     
    /**
     * Constructeur Vecteur
@@ -133,20 +133,21 @@ public class Vecteur {
          * le maximum dans le tableau vect
          *    @param min
          * le minimum dans le tableau vect
+     * @return 
          * @see Vecteur#taille
          * @see Vecteur#vect
          */
     public void retournerBornes(int max,int min)
     {
         int i;
-        min=vect[0];
-        max=vect[0];
+        Integer v[]=new Integer [2];
+      
       for(i=0;i<taille-1;i++)
-      {
-          if (vect[i]>vect[i+1] ) min=vect[i+1];
-          if (vect[i+1]>vect[i] ) max=vect[i+1];
+       {
+          if (vect[i]>vect[i+1] ) max=vect[i+1];//max
+          if (vect[i+1]>vect[i] ) min=vect[i+1];//min
        }
-   
+      
     
     }
       /**
@@ -229,6 +230,12 @@ public class Vecteur {
     {
      for(int i=0;i<taille;i++)
      vect[i]=vect[i]-x;
+    }
+
+    static class vect {
+
+        public vect() {
+        }
     }
     
     
