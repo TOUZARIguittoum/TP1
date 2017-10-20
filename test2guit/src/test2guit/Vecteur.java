@@ -53,7 +53,13 @@ public class Vecteur {
      * 
      */
     int taille;
-    
+    /**
+    * Constructeur Vecteur sans arguments 
+    * <p>Construction d'un objet Vecteur qui un tableau à remplir. 
+    * </p>
+        
+         */
+    public Vecteur (){}
    /**
     * Constructeur Vecteur
     * <p>Construction d'un objet Vecteur qui un tableau à remplir. 
@@ -82,8 +88,10 @@ public class Vecteur {
     {
         for(int i=0;i<taille;i++)
         {
-          Scanner sc=new Scanner(System.in);  
-          vect[i]=sc.nextInt(); 
+          Scanner sc=new Scanner(System.in);
+          System.out.print("vecteur["+i+"]=");
+          vect[i]=sc.nextInt();
+          System.out.println();
         }
     }
     /**
@@ -97,7 +105,7 @@ public class Vecteur {
     public void afficher ()
     {
         for(int i=0;i<taille;i++){
-        System.out.println(vect[i]);
+        System.out.println("vecteur["+i+"]="+vect[i]);
         }
     }
     /**
@@ -132,11 +140,10 @@ public class Vecteur {
     * <p>Trouver le maximum et le minimum dans le tableau vect. 
     * </p>
        
-         @param max
-         * le maximum dans le tableau vect
-         *    @param min
-         * le minimum dans le tableau vect
-     * @return 
+     
+         *@param v
+         * un tableau contient le max et le min
+   
          * @see Vecteur#taille
          * @see Vecteur#vect
          */
@@ -152,7 +159,6 @@ public class Vecteur {
           if (vect[i+1]>vect[i] ) v[1]=vect[i+1];//max
            
        }
-      System.out.println(v[0]+"  "+v[1]);
     
     }
       /**
@@ -237,11 +243,7 @@ public class Vecteur {
      vect[i]=vect[i]-x;
     }
 
-    static class vect {
-
-        public vect() {
-        }
-    }
+    
     
     
 }
