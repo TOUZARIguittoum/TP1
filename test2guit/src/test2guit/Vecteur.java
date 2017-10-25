@@ -104,8 +104,8 @@ public class Vecteur {
          */
     public void afficher ()
     {
-        for(int i=0;i<taille;i++){
-        System.out.println("vecteur["+i+"]="+vect[i]);
+        for(int k=0;k<taille;k++){
+        System.out.println("vecteur["+k+"]="+vect[k]);
         }
     }
     /**
