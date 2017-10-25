@@ -104,8 +104,8 @@ public class Vecteur {
          */
     public void afficher ()
     {
-        for(int i=0;i<taille;i++){
-        System.out.println("vecteur["+i+"]="+vect[i]);
+        for(int k=0;k<taille;k++){
+        System.out.println("vecteur["+k+"]="+vect[k]);
         }
     }
     /**
@@ -121,9 +121,9 @@ public class Vecteur {
   public void triVecteur()
     {
     int i=1,x;
-    boolean inverser;
+    boolean inv1;
     do{
-        inverser=false;
+        inv1=false;
         for (i=0;i<taille-1;i++)
          {
            if (vect[i]>vect[i+1])
@@ -131,11 +131,11 @@ public class Vecteur {
                 x=vect[i];
                 vect[i]=vect[i+1];
                 vect[i+1]=x;
-        inverser=true;
+        inv1=true;
     
               }
          }
-      }while(inverser);
+      }while(inv1);
      }
     /**
      
