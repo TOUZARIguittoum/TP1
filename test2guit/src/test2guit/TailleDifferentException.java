@@ -6,7 +6,8 @@
 package test2guit;
 
 /**
- *
+ * <p> Cette exeption est lancé dans le cas ou on essai de sommer deux vecteurs de taille differentes 
+   </p>
  * @author jean
  */
 public class TailleDifferentException extends Exception {

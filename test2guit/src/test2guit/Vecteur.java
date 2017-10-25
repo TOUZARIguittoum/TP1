@@ -111,6 +111,8 @@ public class Vecteur {
     /**
     
     * <p>Trié le tableau vect en ordre croissant. 
+    * Exemple: V1={2,8,5,1,4,7,9,6,3,10};
+    * aprés tri : V1={1,2,3,4,5,6,7,8,9,10};
     * </p>  
          
          * @see Vecteur#taille
@@ -138,6 +140,8 @@ public class Vecteur {
     /**
      
     * <p>Trouver le maximum et le minimum dans le tableau vect. 
+    * Exemple: Soit V1 un tableau tell que : V1={2,8,5,1,4,7,9,6,3,10};
+    *    on obtient : max=10, min=1;
     * </p>
        
      
@@ -163,7 +167,10 @@ public class Vecteur {
     }
       /**
      
-    * <p>Sommer deux tableaux de meme taille et générer une exception si ils sont de tailles différentes. 
+    * <p>Sommer deux tableaux de meme taille et générer une exception si ils sont de tailles différentes.
+    * Exemple: Soit V1 et V2 deux vecteurs de taille egale tell que : V1={1,2,3,4,5,6,7,8,9,10}, V2={2,8,5,1,4,7,9,6,3,10};
+    * on obtient : V3=V1+V2={3,10,8,5,12,15,13,14,12,20};
+    * Si V1et V2 sont de taille differente le message suivant est affiché: "les taille des tableaux sont differentes";
     * </p>
        
          @param vect2
@@ -184,6 +191,8 @@ public class Vecteur {
     /**
      
     * <p> Inverser les éléments d'un tableau. 
+    * Exemple : Soit V1={1,2,3,4,5,6,7,8,9,10};
+    * on obtient: V1={10,9,8,7,6,5,4,3,2,1};
     * </p>
        
       
@@ -206,6 +215,8 @@ public class Vecteur {
  /**
      
     * <p> Multiplier tous les éléments de vect par x. 
+    * Exemple : Soit V1={1,2,3,4,5,6,7,8,9,10}, x=2 ;
+    * on obtient: V1*x={2,4,6,8,10,12,14,16,18,20};
     * </p>
     * @param x
     * le facteur de multiplication
@@ -221,6 +232,8 @@ public class Vecteur {
     /**
      
     * <p> Ajouter x à tous les éléments de vect. 
+    * Exemple : Soit V1={1,2,3,4,5,6,7,8,9,10}, x=2 ;
+    * on obtient: V1+x={3,4,5,6,7,8,9,10,11,12};
     * </p>
     * @param x
     * le nombre qu'on ajoute à chaque élément de vect
@@ -232,7 +245,9 @@ public class Vecteur {
     }
      /**
      
-    * <p> Soustraire x de tous les éléments de vect. 
+    * <p> Soustraire x de tous les éléments de vect.
+    * Exemple : Soit V1={1,2,3,4,5,6,7,8,9,10}, x=1 ;
+    * on obtient: V1+x={0,1,2,3,4,5,6,7,8,9};
     * </p>
     * @param x
     * le nombre qu'on soustrait de chaque élément de vect

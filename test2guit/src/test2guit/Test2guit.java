@@ -140,7 +140,7 @@ public class Test2guit {
 
 
 
-      choix=sc.nextInt();
+      
       
       
       
