@@ -121,6 +121,7 @@ public class Vecteur {
   public void triVecteur()
     {
     int i=1,x;
+    System.out.println("hhh");
     boolean inv1;
     do{
         inv1=false;
